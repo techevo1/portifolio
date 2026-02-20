@@ -1,0 +1,35 @@
+.floatingBtn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 9999;
+}
+
+.floatingBtn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+  color: white;
+}
+
+.floatingBtn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .floatingBtn {
+    width: 52px;
+    height: 52px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}

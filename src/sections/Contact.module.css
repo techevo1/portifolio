@@ -1,0 +1,88 @@
+.contact {
+    padding: 100px 0;
+    position: relative;
+}
+
+.ctaCard {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.ctaCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 70% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.ctaTitle {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.ctaText {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.iconCircle {
+    width: 54px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.contactItem h5 {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.contactItem p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+    .ctaCard {
+        grid-template-columns: 1fr;
+        padding: 3rem 2rem;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ctaTitle {
+        font-size: 2.2rem;
+    }
+}
