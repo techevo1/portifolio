@@ -12,28 +12,22 @@ const PROJECTS = [
         url: 'https://buscasim.com.br'
     },
     {
-        title: 'Plataforma Pix em Tempo Real',
+        title: 'Plataforma de cobranças em Tempo Real',
         tags: ['Node.js', 'Webhooks', 'Real-time'],
         description: 'Sistema de processamento de pagamentos instantâneos com confirmação automática.',
-        url: 'https://saastechevo.com.br'
-    },
-    {
-        title: 'Dashboard Administrativo',
-        tags: ['React', 'Chart.js', 'Auth'],
-        description: 'Painel completo para gestão de métricas e controle de usuários.',
-        url: 'https://crmtechevo.com.br'
+        url: 'https://evopay.techevo.com.br'
     },
     {
         title: 'Landing Page de Produto',
         tags: ['Framer Motion', 'SEO', 'Conversion'],
         description: 'Página de alta conversão otimizada para campanhas de tráfego pago.',
-        url: 'https://landtechevo.com.br'
+        url: 'https://pagina.techevo.com.br'
     },
     {
         title: 'Loja Virtual Customizada',
         tags: ['Next.js', 'Mercado Pago', 'Stripe'],
         description: 'E-commerce personalizado com checkout transparente e gestão simplificada.',
-        url: 'https://shoptechevo.com.br'
+        url: 'https://shop.techevo.com.br'
     }
 ];
 
