@@ -143,5 +143,29 @@
     .metricOverlay {
         position: static;
         margin-top: 2rem;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .metricOverlay .glass-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem !important;
+    }
+
+    .metricValue {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .title {
+        font-size: 1.6rem;
     }
 }

@@ -145,3 +145,28 @@
         font-size: 1.1rem;
     }
 }
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 120px 0 60px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .actions>* {
+        width: 100%;
+    }
+}
+
+@media (max-width: 340px) {
+    .title {
+        font-size: 1.8rem;
+    }
+}

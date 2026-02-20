@@ -45,8 +45,53 @@
     color: white;
 }
 
+.mobileMenuBtn {
+    display: none;
+    color: white;
+}
+
 @media (max-width: 768px) {
+    .nav {
+        padding: 1rem 0;
+    }
+
+    .mobileMenuBtn {
+        display: block;
+        z-index: 1001;
+    }
+
     .links {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #030303;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+        transition: 0.4s ease;
+        z-index: 1000;
+        padding: 2rem;
+    }
+
+    .linksOpen {
+        right: 0;
+    }
+
+    .link {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        position: relative;
+        z-index: 1001;
+    }
+}
+
+@media (max-width: 340px) {
+    .logo {
+        font-size: 1.1rem;
     }
 }
